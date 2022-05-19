@@ -84,9 +84,95 @@ ul li a{
 ul li a:hover{
   color: #ad03bd;
 }
+/*titulo*/
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    color: white;
+}
 
+.titulo h1{
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+/*titulo*/
+/*Main nosotros*/
+.sobre-nosotros{
+  background-color: #000;
+  color: white;
+  margin: 1% 10%;
+  padding: 0% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sobre-nosotros h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+/*Main nosotros*/
+/*Imagenes*/
+.imagenes {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "imagen1 imagen2"
+    "imagen3 imagen4";
+    justify-items: stretch;
+}
+.imagenes div img{
+  padding: 10px;
+}
+.imagen1 { 
+  grid-area: imagen1;
+  display: flex;
+  justify-content: flex-end;
+}
 
+.imagen2 { 
+  grid-area: imagen2;
+  display: flex;
+  justify-content: flex-start;
+}
+.imagen3 { 
+  grid-area: imagen3;
+  display: flex;
+  justify-content: flex-end;
+}
 
+.imagen4 { 
+  grid-area: imagen4;
+  display: flex;
+  justify-content: flex-start;
+}
+/*Imagenes*/
+/* footer */
+.footer{
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footer address{
+  display: flex;
+  justify-content: center;
+}
+.footer p{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+/* footer */
 /*whatsapp*/
 .btn-wsp{
   position: fixed;
